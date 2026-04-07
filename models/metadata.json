@@ -1,0 +1,13 @@
+{
+  "feature_order": [
+    "behaviorScore",
+    "textScore",
+    "crossScore",
+    "totalWords",
+    "pasteCount",
+    "revisionCount",
+    "speedVariance"
+  ],
+  "description": "Vi-Notes human-authorship classifier and anomaly model",
+  "classifier_accuracy": 0.9950000047683716
+}

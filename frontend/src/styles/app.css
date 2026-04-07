@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-amber-50 font-sans text-slate-900 antialiased;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply absolute left-4 top-4 -translate-y-16 rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white opacity-0 shadow-soft transition focus:translate-y-0 focus:opacity-100 focus:outline-none;
+  }
+}
